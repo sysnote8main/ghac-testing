@@ -33,4 +33,5 @@ jobs:
       - name: Run a multi-line script
         run: |
           echo "::add-mask::sysnote8"
-          echo sysnote8/aaaaa
+          export A="sysnote8/aaaaa"
+          printf %.1s "$A"
